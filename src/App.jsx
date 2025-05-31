@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Agents from './components/Agents';
-import Contact from './components/Contact';
+import Navbar from './pages/Navbar';
+import Hero from './pages/Hero';
+import About from './pages/About';
+import Agents from './pages/Agents';
+import Contact from './pages/Contact';
 
 function App() {
   return (
