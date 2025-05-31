@@ -34,18 +34,6 @@ export default function About() {
         Outside of work, I enjoy perfecting my signature Ghanaian goat soup in the kitchen,
         maintaining a disciplined fitness routine, and planning cultural explorations.
       </Typography>
-      {/* "Read More" Icon Button */}
-      <Box>
-        <IconButton
-          color="primary"
-          component="a"
-          href="about.html"
-          title="Read more about me"
-          aria-label="Read more"
-        >
-          <ArrowForwardIcon />
-        </IconButton>
-      </Box>
     </Box>
   );
 }

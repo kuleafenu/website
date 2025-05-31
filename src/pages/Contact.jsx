@@ -45,19 +45,6 @@ export default function Contact() {
           <LinkedInIcon />
         </IconButton>
       </Box>
-
-      {/* More Contact Options Icon */}
-      <Box>
-        <IconButton
-          color="primary"
-          component="a"
-          href="contact.html"
-          title="More ways to contact me"
-          aria-label="More Contact Options"
-        >
-          <ArrowForwardIcon />
-        </IconButton>
-      </Box>
     </Box>
   );
 }
