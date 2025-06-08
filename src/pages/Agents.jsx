@@ -41,11 +41,11 @@ export default function Agents() {
       embedUrl: 'https://kuleafenu-interview-prep.hf.space',
     },
     {
-      title: 'AI Research Helper',
+      title: 'Deep Research Agent',
       id: 'research-agent',
       imgSrc: researchAgent,
       alt: 'Research Helper',
-      embedUrl: 'https://kuleafenu-research-helper.hf.space',
+      embedUrl: 'https://kuleafenu-deep-research-agent.hf.space',
     },
   ];
 
