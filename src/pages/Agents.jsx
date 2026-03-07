@@ -27,15 +27,15 @@ export default function Agents() {
     {
       title: 'Personal Career Assistant',
       id: 'career-agent',
+      description: 'An AI assistant trained on my background. Ask it anything about my experience, skills, or projects.',
       imgSrc: careerAgent,
       alt: 'Career Assistant',
       embedUrl: 'https://kuleafenu-career-conversation.hf.space',
-      // If you prefer the <gradio-app> tag approach, ensure the script is loaded globally (e.g. in index.html).
-      // embedGradio: true,
     },
     {
       title: 'Interview Prep Agent',
       id: 'interview-agent',
+      description: 'Simulates technical and behavioral interviews, provides feedback, and helps candidates prepare.',
       imgSrc: interviewPrepAgent,
       alt: 'Interview Prep',
       embedUrl: 'https://kuleafenu-interview-prep.hf.space',
@@ -43,6 +43,7 @@ export default function Agents() {
     {
       title: 'Deep Research Agent',
       id: 'research-agent',
+      description: 'Performs multi-step web research on any topic and synthesizes findings into a structured report.',
       imgSrc: researchAgent,
       alt: 'Research Helper',
       embedUrl: 'https://kuleafenu-deep-research-agent.hf.space',
@@ -86,8 +87,11 @@ export default function Agents() {
   return (
     <Box id="agents" sx={{ py: 8, px: 2 }}>
       {/* Section Header */}
-      <Typography variant="h4" align="center" gutterBottom>
-        My Personal Agents
+      <Typography variant="h4" align="center" gutterBottom fontWeight={600}>
+        AI Projects
+      </Typography>
+      <Typography variant="body1" align="center" color="text.secondary" sx={{ mb: 4 }}>
+        AI agents I designed and built — click any to interact with them live.
       </Typography>
 
       {/* Agent Cards Grid */}
@@ -117,17 +121,20 @@ export default function Agents() {
               />
 
               {/* Title and Button */}
-              <CardContent sx={{ flexGrow: 1 }}>
+              <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Typography variant="h6" gutterBottom>
                   {agent.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                  {agent.description}
                 </Typography>
                 <Button
                   variant="contained"
                   color="secondary"
                   onClick={() => handleOpen(agent.id)}
-                  sx={{ textTransform: 'none' }}
+                  sx={{ textTransform: 'none', mt: 'auto' }}
                 >
-                  Open
+                  Try It
                 </Button>
               </CardContent>
             </Card>

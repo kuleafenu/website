@@ -13,4 +13,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ### Deployment
+`npm run build`
 `npm run deploy`

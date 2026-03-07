@@ -1,8 +1,12 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Chip from '@mui/material/Chip';
+
+const skills = [
+  'Golang', 'React', 'AWS', 'Python', 'Docker', 'Kubernetes',
+  'PostgreSQL', 'REST APIs', 'Machine Learning', 'LLMs',
+];
 
 export default function About() {
   return (
@@ -12,28 +16,32 @@ export default function About() {
       sx={{
         py: 8,
         px: 2,
-        maxWidth: 600,
+        maxWidth: 640,
         mx: 'auto',
       }}
     >
-      {/* Section Title */}
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom fontWeight={600}>
         About Me
       </Typography>
 
-      {/* First Paragraph */}
       <Typography variant="body1" sx={{ mb: 2 }}>
-        I am a results-driven Software Engineer with an M.Sc. in Computer Science. I build
-        scalable, legacy or cloud-native applications using Golang, React, and AWS. My passion lies in
-        integrating AI/ML into real-world solutions, and I maintain a YouTube channel where I
-        share business-focused storytelling.
+        I'm a results-driven Software Engineer with an M.Sc. in Computer Science. I build
+        scalable backend systems and cloud-native applications, and I'm passionate about
+        integrating AI/ML into real-world products.
       </Typography>
 
-      {/* Second Paragraph */}
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        Outside of work, I enjoy perfecting my signature Ghanaian goat soup in the kitchen,
-        maintaining a disciplined fitness routine, and planning cultural explorations.
+      <Typography variant="body1" sx={{ mb: 4 }}>
+        Outside of work, I enjoy Ghanaian cooking, fitness, and cultural exploration.
       </Typography>
+
+      <Typography variant="subtitle1" fontWeight={600} gutterBottom>
+        Tech Stack
+      </Typography>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+        {skills.map((skill) => (
+          <Chip key={skill} label={skill} variant="outlined" size="small" />
+        ))}
+      </Box>
     </Box>
   );
 }
