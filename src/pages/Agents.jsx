@@ -30,7 +30,7 @@ export default function Agents() {
       description: 'An AI assistant trained on my background. Ask it anything about my experience, skills, or projects.',
       imgSrc: careerAgent,
       alt: 'Career Assistant',
-      embedUrl: 'https://kuleafenu-career-conversation.hf.space',
+      embedUrl: 'https://kuleafenu-career-assistant.hf.space',
     },
     {
       title: 'Interview Prep Agent',

@@ -33,7 +33,7 @@ export default function Hero() {
       </Typography>
 
       <Typography variant="h6" component="p" color="text.secondary" gutterBottom>
-        Software Engineer — Golang · React · AWS · AI/ML
+        Software & AI Integration Engineer — Golang · React · AWS · AI/ML
       </Typography>
 
       <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 480, mx: 'auto', mb: 3 }}>

@@ -25,7 +25,7 @@ export default function About() {
       </Typography>
 
       <Typography variant="body1" sx={{ mb: 2 }}>
-        I'm a results-driven Software Engineer with an M.Sc. in Computer Science. I build
+        I'm a results-driven Software & AI Integration Engineer with an M.Sc. in Computer Science. I build
         scalable backend systems and cloud-native applications, and I'm passionate about
         integrating AI/ML into real-world products.
       </Typography>
